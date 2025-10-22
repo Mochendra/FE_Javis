@@ -109,3 +109,15 @@ input::placeholder {
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }
+
+.bg-blue-dark {
+  background-color: #0d6efd;
+  transition: background-color 0.3s ease;
+}
+
+.login-card.dark {
+  background-color: #1c2b4a; 
+  color: white;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -32,13 +32,6 @@ export default function Dashboard() {
         <p className="lead mb-4">{msg || 'Berhasil masuk ke sistem.'}</p>
 
         <div className="d-flex justify-content-center gap-3">
-          {/* <button
-            className="btn btn-outline-light px-4 py-2 fw-semibold"
-            onClick={() => navigate('/profile')}
-          >
-            Profil
-          </button> */}
-
           <button
             className="btn btn-light px-4 py-2 fw-semibold dashboard-btn"
             onClick={handleLogout}

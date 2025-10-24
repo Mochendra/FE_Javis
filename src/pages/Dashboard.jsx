@@ -10,13 +10,14 @@ export default function Dashboard() {
 
   useEffect(() => {
     api
-      .get('/dashboard')
+      .get('/dashboard', { withCredentials: true })
       .then((res) => {
         setMsg(res.data.message);
         setUser(res.data.user || { name: 'Pengguna' });
       })
       .catch(() => navigate('/login'));
   }, [navigate]);
+
 
   const handleLogout = async () => {
     await api.post('/auth/logout');

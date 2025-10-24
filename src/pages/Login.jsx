@@ -27,7 +27,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-    const res = await api.post('/auth/login', { email, password });
+    const res = await api.post('/auth/login', { email, password }, { withCredentials: true });
     navigate('/dashboard');
 
     } catch (err) {
